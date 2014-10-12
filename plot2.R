@@ -7,7 +7,6 @@ plot2 <- function() {
 	#Launch graphics device
 	png(file = "plot2.png", width = 504, height = 504, bg = "transparent", type = "cairo-png")
 
-	
 	#generate plot
 	with(energyData, plot(timeStamp, Global_active_power, 
 		xlab = "", ylab = "Global Active Power (kilowatts)", type = "l"))
