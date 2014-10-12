@@ -5,7 +5,7 @@ plot2 <- function() {
 	energyData <- readData()
 	
 	#Launch graphics device
-	png(file = "plot2.png", width = 504, height = 504, bg = "transparent", type = "cairo-png")
+	png(file = "plot2.png", width = 480, height = 480, bg = "transparent", type = "cairo-png")
 
 	#generate plot
 	with(energyData, plot(timeStamp, Global_active_power, 

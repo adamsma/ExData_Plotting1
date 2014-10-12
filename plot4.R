@@ -5,7 +5,7 @@ plot4 <- function() {
 	energyData <- readData()
 	
 	#Launch graphics device
-	png(file = "plot4.png", width = 504, height = 504, bg = "transparent", type = "cairo-png")
+	png(file = "plot4.png", width = 480, height = 480, bg = "transparent", type = "cairo-png")
 
 	#generate plots
 	par(mfcol = c(2,2))

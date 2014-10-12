@@ -5,7 +5,7 @@ plot3 <- function() {
 	energyData <- readData()
 	
 	#Launch graphics device
-	png(file = "plot3.png", width = 504, height = 504, bg = "transparent", type = "cairo-png")
+	png(file = "plot3.png", width = 480, height = 480, bg = "transparent", type = "cairo-png")
 
 	#generate plot
 	with(energyData, plot(timeStamp, Sub_metering_1, xlab = "", ylab = "Energy sub metering", type = "l"))
