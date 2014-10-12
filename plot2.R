@@ -4,7 +4,7 @@ plot2 <- function() {
 	#load data
 	energyData <- readData()
 	
-	#Launch PNG graphics device
+	#Launch graphics device
 	png(file = "plot2.png", width = 480, height = 480, bg = "transparent", type = "cairo-png")
 
 	#generate plot
