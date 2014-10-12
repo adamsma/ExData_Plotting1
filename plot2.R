@@ -1,15 +1,16 @@
 
-plot1 <- function() {
-	
+plot2 <- function() {
+
 	#load data
 	energyData <- readData()
 	
 	#Launch graphics device
-	png(file = "plot1.png", width = 504, height = 504, bg = "transparent", type = "cairo-png")
+	png(file = "plot2.png", width = 504, height = 504, bg = "transparent", type = "cairo-png")
+
 	
 	#generate plot
-	hist(energyData$Global_active_power, main = "Global Active Power", col = "red", 
-		xlab = "Global Active Power (kilowatts)")
+	with(energyData, plot(timeStamp, Global_active_power, 
+		xlab = "", ylab = "Global Active Power (kilowatts)", type = "l"))
 		
 	#close graphics device
 	dev.off()
