@@ -52,6 +52,7 @@ readData <- function() {
 		print(dim(energyData)[1])
 	}
 	
+	## return loaded data
 	energyData
 
 }
